@@ -10,7 +10,7 @@ local commonPanels = import 'components/panels/common.libsonnet';
       description='Requests per second (all http-status)',
       colorBackground=true,
       format='rps',
-      sparklineShow=true,
+      sparklineShow=false,
       span=4,
       query=|||
         sum(
@@ -30,7 +30,7 @@ local commonPanels = import 'components/panels/common.libsonnet';
       description='Percentage of successful (non http-5xx) requests',
       colorBackground=true,
       format='percent',
-      sparklineShow=true,
+      sparklineShow=false,
       thresholds="99,95",
       colors=[
         '#d44a3a',

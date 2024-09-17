@@ -137,7 +137,7 @@ local promQuery = import 'components/prom_query.libsonnet';
       description='Requests per second (all http-status)',
       colorBackground=true,
       format='rps',
-      sparklineShow=true,
+      sparklineShow=false,
       span=span,
       query=|||
         sum(
@@ -159,7 +159,7 @@ local promQuery = import 'components/prom_query.libsonnet';
       description='Percentage of successful (non http-5xx) requests',
       colorBackground=true,
       format='percent',
-      sparklineShow=true,
+      sparklineShow=false,
       thresholds='99,95',
       colors=[
         '#d44a3a',
